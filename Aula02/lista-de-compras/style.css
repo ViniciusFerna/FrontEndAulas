@@ -8,11 +8,129 @@
 
 :root {
     --red: #FF5F5D;
+    --red-hover: #c54b49;
     --orange: #F29325;
-    --background: #747E7E;
-    --white: #ffff;
+    --orange-hover: #ca7c23;
+    --background: #f5f5f5;
+    --white: #ffffff;
 }
 
 body {
-    font-family: Atkinson Hyperlegible Mono;
+    font-family: "Atkinson Hyperlegible Mono", serif;
+    background-color: var(--background);
+}
+
+.container {
+    background-color: var(--white);
+    max-width: 500px;
+    margin: 20px auto; /* Centralizar mais fácil */
+    border-radius: 8px;
+    padding: 16px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.subtitle {
+    color: #667;
+    text-align: center;
+}
+
+#add {
+    background-color: var(--orange);
+    width: 100%;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 0;
+    margin: 10px 0;
+
+    &:hover {
+        background-color: var(--orange-hover);
+        transition: 0.5s ease;
+    }
+}
+
+.clean {
+    width: 50%;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 0;
+
+    &:hover {
+        background-color: var(--red-hover);
+        transition: 0.5s ease;
+    }
+}
+
+.clean-buy {
+    width: 50%;
+    background-color: var(--red);
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    padding: 6px 0;
+
+    &:hover {
+        background-color: var(--red-hover);
+        transition: 0.5s ease;
+    }
+}
+
+.inputGroup {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.actions {
+    display: flex;
+    gap: 10px;
+}
+
+#item {
+    width: 70%;
+}
+
+#qtd {
+    width: 30%;
+}
+
+input {
+    padding: 7px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+
+    &:focus {
+        outline: none;
+        border-color: var(--orange);
+        transition: 0.5s ease;
+    }
+}
+
+li {
+    display: flex;
+    margin: 20px 0;
+}
+
+li p {
+    margin-left: 5px;
+}
+
+li button {
+    border: none;
+    background-color: transparent;
+    color: red;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+li input {
+    accent-color: var(--orange);
 }

@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    
     <div class="container">
         <h1>Lista de Compras</h1>
         <p class="subtitle">Facilite sua ida ao SuperMercado</p>
@@ -15,19 +16,23 @@
             
             <div class="inputGroup">
                 <input type="text" id="item" placeholder="Digite o nome do item">
-                <input type="text" id="qantidade" placeholder="Qtd">
+                <input type="text" id="quantidade" placeholder="Qtd">
             </div>
 
-            <button>Adcionar item</button>
+            <button id="add" onclick="adicionarItem()">Adcionar item</button>
 
         </div>
 
-        <ul class="lista"></ul>
+        <ul id="lista">
+            
+        </ul>
 
         <div class="actions">
-            <button>Limpar lista</button>
-            <button>Limpar comprados</button>
+            <button class="clean" onclick="limparLista()">Limpar lista</button>
+            <button class="clean-buy" onclick="limparComprados()">Limpar comprados</button>
         </div>
     </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
