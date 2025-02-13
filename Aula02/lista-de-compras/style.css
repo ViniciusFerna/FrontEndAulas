@@ -121,6 +121,9 @@ li {
 
 li p {
     margin-left: 5px;
+    width: 90%;
+    text-wrap: wrap;
+    word-wrap: break-word;
 }
 
 li button {
