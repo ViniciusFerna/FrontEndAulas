@@ -46,7 +46,7 @@ function atualizarInterface() {
                 <button onclick="excluirItem(${listaDeCompras[i].id})">X</button>`;
         lista.append(item);
     };
-}
+};
 
 function excluirItem(id) {
     listaDeCompras = listaDeCompras.filter((item) => item.id !== id);
