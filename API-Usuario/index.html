@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciador de usuarios</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 20px;
+        }
+
+        input {
+            margin-bottom: 10px;
+            padding: 8px;
+            width: 250px;
+        }
+
+        .save-btn {
+            border: none;
+            background-color: green;
+            color: #fff;
+            padding: 12px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Gerenciador de usuarios</h1>
+
+    <div>
+        <h2>Adicionar usuario</h2>
+        <form id="userForm">
+            <div>
+                <label for="">Nome:</label>
+                <input type="text" id="name" required>
+            </div>
+
+            <div>
+                <label for="">Email:</label>
+                <input type="text" id="email" required>
+            </div>
+
+            <button type="submit" class="save-btn">Salvar usuario</button>
+        </form>
+
+        <h2>Lista de usuarios</h2>
+        <div id="userList">
+            <p>Carregando usuarios...</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

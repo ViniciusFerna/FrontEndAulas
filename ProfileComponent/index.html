@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <button id="theme-toggle">🌙 Dark Mode</button>
+ 
+        <div class="card" id="user-card">
+            <div class="card-header">
+                <div class="avatar">
+                    <span>👨🏾</span>
+                </div>
+                <div class="user-info">
+                    <h2 id="userNameElement">User name</h2>
+                    <p id="userName"></p>
+                </div>
+            </div>
+ 
+            <div class="card-content">
+                <div class="tab-list">
+                    <button class="tab-button active" data-tab="contact">Contato</button>
+                    <button class="tab-button" data-tab="address">Endereço</button>
+                </div>
+            </div>
+            <div class="tab-content active" id="contact">
+                <div class="info-row">
+                    <span class="info-label">Email:</span>
+                    <span class="ino-value" id="emailContent"></span>
+                </div>
+                <div class="info-row">
+                    <span class="info-label">Telefone:</span>
+                    <span class="ino-value" id="phoneContent"></span>
+                    <button>Copiar</button>
+                </div>
+ 
+                <div class="info-row">
+                    <span class="info-label">Website</span>
+                    <span class="ino-value" id="siteContent"></span>
+                </div>
+            </div>
+
+            <div class="tab-content" id="address">
+                <div class="info-row">
+                    <span class="info-label">Rua:</span>
+                    <span class="ino-value" id="streetContent"></span>
+                </div>
+
+                <div class="indo-row">
+                    <span class="info-label">Cidade/CEP:</span>
+                    <span class="info-value" id="cityZipContent"></span>
+                </div>
+            </div>
+
+        </div>
+    </div>
+ 
+    <script src="script.js"></script>
+</body>
+</html>

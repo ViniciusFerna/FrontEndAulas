@@ -1,0 +1,82 @@
+.hero {
+    max-width: 80rem;
+    width: 100%;
+    margin: 0 auto;
+    padding: 2.5rem 2rem;
+    margin-top: 2rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.content-text {
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+}
+
+.hero h1 {
+    max-width: 40rem;
+    font-size: 4rem;
+    line-height: 1.25;
+}
+
+.hero p {
+    max-width: 40rem;
+    font-size: 1.4rem;
+}
+
+.content-text button {
+    width: fit-content;
+    border: none;
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: opacity 0.5s ease-out;
+    font-size: 1rem;
+    font-weight: 600;
+
+    &:hover {
+        opacity: 0.8;
+    }
+}
+
+.img-container {
+    display: block;
+    width: 100%;
+    max-width: 43rem;
+    margin-top: 3rem;
+}
+
+.hero img {
+    width: 100%;
+}
+
+.benefits {
+    margin: 0 auto;
+    max-width: 80rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.benefits-card {
+    flex: 1;
+    display: flex;
+    gap: 1rem;
+}
+
+.benefits-card span {
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+    height: fit-content;
+}
+
+.benefits-card div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}

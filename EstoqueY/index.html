@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EstoqueY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <header class="header">
+        <span>EstoqueY</span>
+
+        <nav class="navbar">
+            <a href="#">Início</a>
+            <a href="#">Lançamentos</a>
+            <a href="#">Masculino</a>
+            <a href="#">Feminino</a>
+        </nav>
+
+        <!-- Lucide Icons -->
+        <div>
+            <button id="shopping-bag">
+                <img src="assets/icons/shopping-bag.svg" alt="">
+                <span class="product-count"></span>
+            </button>
+            <img src="assets/icons/user.svg" alt="">
+        </div>
+    </header>
+
+    <div class="hero">
+        <div class="content-text">
+            <h1>O passo certo para o seu negócio de tênis!</h1>
+            <p>
+                Aqui, acreditamos que cada passo que você dá é uma expressão do seu estilo único. Somos o destino
+                perfeito para quem busca os tênis mais desejados do mercado, seja para renovar o próprio guarda-roupa ou
+                para impulsionar um negócio de revenda.
+            </p>
+            <button>Saiba mais</button>
+        </div>
+        <div class="img-container">
+            <div class="content">
+                <img src="assets/jordan1.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <div class="benefits">
+        <div class="benefits-card">
+            <span>
+                <img src="assets/icons/package.svg" alt="">
+            </span>
+            <div>
+                <h4>Frete grátis</h4>
+                <p>Frete grátis para todo o Brasil em compras acima de R$ 150</p>
+            </div>
+        </div>
+
+        <div class="benefits-card">
+            <span>
+                <img src="assets/icons/discount.svg" alt="">
+            </span>
+            <div>
+                <h4>Desconto de 10% no pix</h4>
+                <p>Ao pagar no pix oferecemos um desconto de 10% na primeira compra e 5% nas demais</p>
+            </div>
+        </div>
+
+        <div class="benefits-card">
+            <span>
+                <img src="assets/icons/quality.svg" alt="">
+            </span>
+            <div>
+                <h4>Qualidade de garantia</h4>
+                <p>Garatimos a veracidade e qualidade de todos os produtos vendidos em nosso site</p>
+            </div>
+        </div>
+        
+    </div>
+
+    <section class="container">
+        <h2>Produtos</h2>
+        <p>Confira nossos novos produtos</p>
+
+        <div class="product-container">
+            
+        </div> 
+    </section>
+
+    <div class="sidebar" id="sidebar">
+        <header>
+            <h3>Sacola</h3>
+            <button class="closeButton" id="closeButton">X</button>
+        </header>
+
+        <div id="carrinho-container">
+            
+        </div>
+
+        <footer class="total-container">
+            <div class="total-content">
+                <p>Total</p>
+                <p id="total-carrinho">R$ 200</p>
+            </div>
+            <a class="finalizarButton" href="">Finalizar compra</a>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

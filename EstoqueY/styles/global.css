@@ -1,0 +1,23 @@
+* {
+        margin: 0;
+        padding: 0;
+        text-decoration: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:ital,wght@0,200..800;1,200..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+        --background: #ffff;
+        --primary-color: #201F1C;
+        --secondary-color: #8E12E3;
+}
+
+html {
+        font-family: "Inter", serif;
+        font-weight: 500;
+}
+
+h1 {
+        font-family: "Poppins", serif;
+}
