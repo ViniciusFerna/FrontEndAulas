@@ -26,7 +26,7 @@ function displayUsers(users) {
             <div>
             <strong>Nome:</strong> ${user.name} <br>
             <strong>Email:</strong> ${user.email} <br>
-            <button>Delete</button>
+            <button onclick="deleteUser('${user.id}')">Delete</button>
             </div>
         `
 
@@ -58,4 +58,20 @@ function addUser(event) {
 
         alert("Usuario criado com sucesso!")
     })
+}
+
+function deleteUser(userId) {
+    if(confirm("Tem certeza que deseja deletar esse usuário?")) {
+        fetch(`${API_URL}/${userId}`, {
+            method: "DELETE"
+        }).then((res) => {
+            if(!res) {
+                throw new Error(`Error HTTP: ${res.status}`)
+            }
+            fetchUsers()
+
+            alert("Usuario excluido com sucesso!")
+        })
+    }
+
 }
